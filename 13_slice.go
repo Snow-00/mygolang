@@ -34,5 +34,11 @@ func main(){
   slice1[0] = "ubah"
   fmt.Println(months)
 
-  days := [...]string{"senin", "selasa", "rabu", "kamis"}
+  slice2 := months[10:]
+  fmt.Println(slice2)
+
+  slice3 := append(slice2, "tambah")
+  fmt.Println(slice3)
+  slice3[1] = "bukan desember" // 14:29
+
 }
