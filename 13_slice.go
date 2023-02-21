@@ -50,7 +50,9 @@ func main(){
   fmt.Println(slice3)
   fmt.Println(slice2)
   fmt.Println(months)
-
+  
+  // membuat slice baru tanpa harus membuat var array baru dahulu
+  // array yg digunakan dari syntax make adl array kosong / dummy
   newSlice := make([]string, 2, 5)
 
   newSlice[0] = "test"
@@ -58,4 +60,18 @@ func main(){
   fmt.Println(newSlice)
   fmt.Println(len(newSlice))
   fmt.Println(cap(newSlice))
+  
+  // saat copy hrs memperhatikan len dan cap karena jika beda bisa membuat
+  // data terpotong
+  copySlice := make([]string, len(newSlice), cap(newSlice))
+  //copySlice := make([]string, len(newSlice), cap(newSlice))
+  copy(copySlice, newSlice)
+  fmt.Println(copySlice)
+  
+  // hati2 saat deklarasi array dan slice
+  // slice isi [kosong] kalo array [...] / [angka]
+  iniArray := [...]int{1, 2, 3, 4, 5}
+  iniSlice := []int{1, 2, 3, 4, 5}
+  fmt.Println(iniArray)
+  fmt.Println(iniSlice)
 }
