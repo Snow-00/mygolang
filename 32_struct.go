@@ -1,6 +1,11 @@
 package main
 import "fmt"
 
+/** 
+struct itu kek class di OOP
+membuat 1 var berisi berbagai macam jenis data
+*/
+
 type Customer struct {
   //Name string
   //Address string
