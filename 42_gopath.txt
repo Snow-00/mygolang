@@ -1,0 +1,1 @@
+buka di utub programmer zaman now, ini ttg setting env golang di .bashrc
