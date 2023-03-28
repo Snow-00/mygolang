@@ -1,6 +1,6 @@
 package main
-import "root/go/mygolang/helper"
+import "mygolang/helper"
 
 func main() {
-  helper.sayHello("eko")
+  helper.SayHello("eko")
 }

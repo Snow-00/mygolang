@@ -1,1 +1,3 @@
 buka di utub programmer zaman now, ini ttg setting env golang di .bashrc
+
+cara terbarunya sekarang pake go mod init (go module) -> ini nemu di inet sendiri

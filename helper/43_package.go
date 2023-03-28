@@ -7,6 +7,15 @@ package itu br blh
 package helper
 import "fmt"
 
-func sayHello(name string) {
+// kalo utk package var nya hrs cara gini, kalo cara := bakal error
+var version = 1
+var Application = "belajar golang"
+
+// nama func hrs diawali huruf besar, kalo ga error nanti
+func SayHello(name string) {
   fmt.Println("hello", name)
+}
+
+func sayGoodbye(name string) {
+  fmt.Println("Goodbye", name)
 }
